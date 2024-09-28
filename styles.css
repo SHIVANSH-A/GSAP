@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+#main{
+    height: 100vh;
+    width: 100%;
+    background-color: red;
+}
+nav{
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: space-between;
+    height: 10vh;
+    z-index: 100;
+    width: 100%;
+    padding: 0vw 10vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav a,i{
+    text-decoration: none;
+    color:white;
+}
+
+.cnt-nav{
+    display: flex;
+    gap: 2vw;
+}
+nav i{
+    font-size: 2.4vw;
+}
+.one{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(120deg ,rgb(255, 145, 0),rgb(255, 128, 0),rgb(255, 60, 0));
+}
+
+#fanta{
+    position: absolute;
+    z-index: 2;
+    width: 70%;
+    transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+
+}
+#slice{
+    position: absolute;
+    top: 10%;
+    left: 30%;
+    width: 20%;
+    z-index: 1;
+    transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+
+}
+#orange{
+    position: absolute;
+    z-index: 3;
+    width: 30%;
+    right: 24%;
+    bottom: 5%;
+    transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+
+}
+#leaf1{
+    position: absolute;
+    width: 24%;
+    right: 0%;
+    top: 17%;
+    transform: rotate(100deg);
+    transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+
+}
+#leaf2{
+    position: absolute;
+    rotate:60deg ;
+    bottom: 3%;
+    right: 23%;
+    width: 20%;
+    transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+
+}
+#leaf3{
+    position: absolute;
+    width: 20%;
+    top: 10%;
+    left: -2%;
+}
+h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25vw; 
+    color: white;
+
+}
+.two{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: space-around;
+    background-color: rgb(255, 222, 171);
+}
+.lft-two,.rht-two{
+    display: flex;
+    gap: 2vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 50%;
+    height: 100vh;
+}
+
+.lft-two svg{
+    width: 80%;
+    margin-top:50vh;
+    transform: rotateX(40deg);
+}
+
+.rht-two h2{
+    font-size: 5vw;
+    color: white;
+
+}
+
+.rht-two p{
+    font-size: 1.2vw;
+    color: white;
+    width: 90%;
+    
+}
+.three{
+    display: flex;
+    gap: 5vw;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(120deg ,rgb(255, 145, 0),rgb(255, 128, 0),rgb(255, 60, 0));
+}
+.card{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    flex-direction: column;
+    width: 25%;
+    gap: 1.4vw;
+    height: 70vh;
+    background-color: white;
+    margin-top: 12vh;
+}
+
+.card h2{
+    color: white;
+    margin-top: 45vh;
+    font-size: 4vw;
+}
+
+.card button{
+    font-size: 1vw;
+    border-radius: 20px;
+    color: white;
+    padding: 1vw 2vw;
+    background-color: rgb(228, 152, 11);   
+    border: none;
+}
+
+.card:nth-child(1){
+    background-color:rgb(106, 204, 246);
+}
+.card:nth-child(2){
+    background-color:rgb(246, 169, 106);
+}
+.card:nth-child(3){
+    background-color:rgb(138, 250, 151);
+}
+#sprite{
+    position: absolute;
+    top: -10%;
+    left: 50%;
+    transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+    width: 112%;
+    transform: translate(-50%,0%);
+}
+
+#pepsi{
+    position: absolute;
+    top: -10%;
+    left: 50%;
+    width: 110%;
+    transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+    transform: translate(-50%,0%);
+}
+
+#lemon{
+    position: absolute;
+    transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+    top: -24%;
+    width:90%;
+    
+}
+#water{
+    position: absolute;
+    transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+    top: -15%;
+    width:70%;
+}
